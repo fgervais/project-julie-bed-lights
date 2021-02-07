@@ -3,4 +3,6 @@
   (lib (name SM3ZS067U410-NUT1-R1200)(type Legacy)(uri ${KIPRJMOD}/kicad-library/SM3ZS067U410-NUT1-R1200/SM3ZS067U410-NUT1-R1200.lib)(options "")(descr ""))
   (lib (name BM06B-SRSS-TB_LF__SN_)(type Legacy)(uri "${KIPRJMOD}/kicad-library/BM06B-SRSS-TB(LF)(SN)/BM06B-SRSS-TB_LF__SN_.lib")(options "")(descr ""))
   (lib (name FET)(type Legacy)(uri ${KIPRJMOD}/kicad-library/mine/FET.lib)(options "")(descr ""))
+  (lib (name AP63300WU-7)(type Legacy)(uri ${KIPRJMOD}/kicad-library/AP63300WU-7/AP63300WU-7.lib)(options "")(descr ""))
+  (lib (name SRP4020TA-6R8M)(type Legacy)(uri ${KIPRJMOD}/kicad-library/SRP4020TA-6R8M/SRP4020TA-6R8M.lib)(options "")(descr ""))
 )

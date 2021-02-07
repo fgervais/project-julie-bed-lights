@@ -5,4 +5,6 @@
   (lib (name SOIC127P600X175-8N)(type KiCad)(uri ${KIPRJMOD}/kicad-library/SOIC127P600X175-8N)(options "")(descr ""))
   (lib (name Conn_Molex_393570002)(type KiCad)(uri ${KIPRJMOD}/kicad-library/Conn_Molex_393570002)(options "")(descr ""))
   (lib (name Conn_Molex_393570004)(type KiCad)(uri ${KIPRJMOD}/kicad-library/Conn_Molex_393570004)(options "")(descr ""))
+  (lib (name AP63300WU-7)(type KiCad)(uri ${KIPRJMOD}/kicad-library/AP63300WU-7)(options "")(descr ""))
+  (lib (name SRP4020TA-6R8M)(type KiCad)(uri ${KIPRJMOD}/kicad-library/SRP4020TA-6R8M)(options "")(descr ""))
 )
