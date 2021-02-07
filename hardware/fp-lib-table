@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name 2199230-4)(type KiCad)(uri ${KIPRJMOD}/kicad-library/2199230-4)(options "")(descr ""))
+  (lib (name SM3ZS067U410-NUT1-R1200)(type KiCad)(uri ${KIPRJMOD}/kicad-library/SM3ZS067U410-NUT1-R1200)(options "")(descr ""))
+  (lib (name "BM06B-SRSS-TB(LF)(SN)")(type KiCad)(uri "${KIPRJMOD}/kicad-library/BM06B-SRSS-TB(LF)(SN)")(options "")(descr ""))
+  (lib (name SOIC127P600X175-8N)(type KiCad)(uri ${KIPRJMOD}/kicad-library/SOIC127P600X175-8N)(options "")(descr ""))
+  (lib (name Conn_Molex_393570002)(type KiCad)(uri ${KIPRJMOD}/kicad-library/Conn_Molex_393570002)(options "")(descr ""))
+  (lib (name Conn_Molex_393570004)(type KiCad)(uri ${KIPRJMOD}/kicad-library/Conn_Molex_393570004)(options "")(descr ""))
+)
