@@ -3,9 +3,9 @@ import time
 import micropython
 import esp32
 import machine
-# import blynklib_mp as blynklib
-# import blynklib_mp_ssl as blynklib_ssl
-# import secret
+import blynklib_mp as blynklib
+import blynklib_mp_ssl as blynklib_ssl
+import secret
 
 from machine import Pin, PWM, ADC, TouchPad, RTC, UART
 
@@ -17,6 +17,16 @@ BLUE_PIN = 5
 COLOR_VPIN = 0
 BRIGHTNESS_VPIN = 1
 ON_OFF_VPIN = 2
+
+
+wlan = network.WLAN(network.STA_IF)
+wlan.active(True)
+if not wlan.isconnected():
+    print("connecting to network...")
+    wlan.connect(secret.ESSID, secret.PSK)
+    while not wlan.isconnected():
+        time.sleep(1)
+print("network config:", wlan.ifconfig())
 
 
 class LedStrip:
@@ -40,7 +50,7 @@ class LedStrip:
         else:
             brightnes = 0
 
-        for index, value in enumerate(self._color)
+        for index, value in enumerate(self._color):
             self.pwms[index].duty(int(value * brightnes))
 
     @property
@@ -60,8 +70,6 @@ class LedStrip:
     def brightnes(self, value):
         self._brightnes = value
         self.show()
-    
-
 
 
 strip = LedStrip([RED_PIN, GREEN_PIN, BLUE_PIN])
@@ -70,14 +78,13 @@ ssl_connection = blynklib_ssl.SslConnection(secret.BLYNK_AUTH, port=443, log=pri
 blynk = blynklib.Blynk(secret.BLYNK_AUTH, connection=ssl_connection)
 
 
-
 @blynk.handle_event("write V" + str(COLOR_VPIN))
 def write_handler(pin, value):
-    strip.brightnes = float(value)
+    strip.color = tuple(map(int, value))
 
 @blynk.handle_event("write V" + str(BRIGHTNESS_VPIN))
 def write_handler(pin, value):
-    strip.color = tuple(map(int, value))
+    strip.brightnes = float(value[0])
 
 @blynk.handle_event("write V" + str(ON_OFF_VPIN))
 def write_handler(pin, value):
