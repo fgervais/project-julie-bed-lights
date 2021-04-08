@@ -95,10 +95,9 @@ def write_handler(pin, value):
 
 
 blynk.run()
-blynk.virtual_sync(COLOR_VPIN)
-blynk.virtual_sync(BRIGHTNESS_VPIN)
-blynk.virtual_sync(ON_OFF_VPIN)
-blynk.run()
+for i in [COLOR_VPIN ,BRIGHTNESS_VPIN, ON_OFF_VPIN]:
+    blynk.virtual_sync(i)
+    blynk.run()
 
 while True:
     blynk.run()
