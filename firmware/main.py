@@ -31,7 +31,7 @@ print("network config:", wlan.ifconfig())
 
 class LedStrip:
     def __init__(self, rgb_pins):
-        self.pwms = [PWM(Pin(i), freq=4000, duty=0) for i in rgb_pins]
+        self.pwms = [PWM(Pin(i), freq=500, duty=0) for i in rgb_pins]
         self._on = False
         self._color = (0, 0, 0)
         self._brightnes = 0
