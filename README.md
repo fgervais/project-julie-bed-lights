@@ -13,8 +13,8 @@
 
 This project is entirely controlled through the phone app. 
 
-![App](assets/img/app.png)
+The QR code can be used to get a copy of this Blink project.
 
-This QR code can be used to get a copy of this Blink project.
-
-![Clone](assets/img/app_clone.png)
+Blynk Project | Blynk Project Clone QR
+:-------------------------:|:-------------------------:
+<img src="assets/img/app.png" alt="Blynk Project" width="200">  |  <img src="assets/img/app_clone.png" alt="Blynk Project QR" width="200">
