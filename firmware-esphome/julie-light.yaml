@@ -1,0 +1,8 @@
+esphome:
+  name: julie-light
+  platform: ESP32
+  board: esp-wrover-kit
+
+# RED_PIN = 19
+# GREEN_PIN = 23
+# BLUE_PIN = 5
