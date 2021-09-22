@@ -3,6 +3,35 @@ esphome:
   platform: ESP32
   board: esp-wrover-kit
 
+logger:
+  level: DEBUG
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+ota:
+
+mqtt:
+  broker: home.local
+
+light:
+  - platform: rgb
+    name: "Julie Light"
+    red: red
+    green: green
+    blue: blue
+
 # RED_PIN = 19
 # GREEN_PIN = 23
 # BLUE_PIN = 5
+output:
+  - platform: ledc
+    id: red
+    pin: GPIO19
+  - platform: ledc
+    id: green
+    pin: GPIO23
+  - platform: ledc
+    id: blue
+    pin: GPIO5
