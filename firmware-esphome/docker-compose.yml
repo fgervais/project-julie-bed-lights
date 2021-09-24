@@ -2,7 +2,7 @@ version: "3"
 
 services:
   esphome:
-    image: esphome/esphome:2021.8.2
+    image: esphome/esphome:2021.9.1
     volumes:
       - ./:/config:rw
       # Use local time for logging timestamps
