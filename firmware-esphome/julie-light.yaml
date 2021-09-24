@@ -22,9 +22,6 @@ light:
     green: green
     blue: blue
 
-# RED_PIN = 19
-# GREEN_PIN = 23
-# BLUE_PIN = 5
 output:
   - platform: ledc
     id: red
